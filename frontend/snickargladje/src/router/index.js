@@ -6,17 +6,17 @@ import AboutView from '@/views/AboutView'
 
 const routes = [
   {
-    path: '/',
+    path: '/snickargladje/',
     name: 'home',
     component: HomeView
   },
   {
-    path: '/kontakt',
+    path: '/snickargladje/kontakt',
     name: 'contact',
     component: ContactView
   },
   {
-    path: '/om',
+    path: '/snickargladje/om',
     name: 'about',
     component: AboutView
   },
