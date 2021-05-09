@@ -2,10 +2,12 @@
   <div class="item-container">
     <div class="card">
       <div class="card-image">
-        <img
-          class="image"
-          src="https://dl.dropboxusercontent.com/s/g4y93kq2h6qbs4n/test.svg?dl=0"
-        />
+        <router-link :to="{ name: 'product' }">
+          <img
+            class="image"
+            src="https://dl.dropboxusercontent.com/s/g4y93kq2h6qbs4n/test.svg?dl=0"
+          />
+        </router-link>
       </div>
       <div class="card-header">
         <h2>Produkt titel</h2>
@@ -18,7 +20,9 @@
         </p>
       </div>
       <div class="card-button">
-        <button>Mer info</button>
+        <router-link :to="{ name: 'product' }">
+          <button>Mer info</button>
+        </router-link>
       </div>
     </div>
   </div>

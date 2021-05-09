@@ -51,5 +51,6 @@ export default {
   grid-template-rows: auto;
 }
 .footer {
+  grid-row: 3;
 }
 </style>

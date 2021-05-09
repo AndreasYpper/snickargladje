@@ -4,6 +4,8 @@ import HomeView from '@/views/HomeView'
 import ContactView from '@/views/ContactView'
 import AboutView from '@/views/AboutView'
 
+import ProductView from '@/views/ProductView'
+
 const routes = [
   {
     path: '/snickargladje/',
@@ -20,6 +22,11 @@ const routes = [
     name: 'about',
     component: AboutView
   },
+  {
+    path: '/snickargladje/produkt',
+    name: 'product',
+    component: ProductView
+  }
 ]
 
 const router = createRouter({
