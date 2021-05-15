@@ -48,7 +48,7 @@ export default {
   background-color: #fff;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto auto;
 }
 .footer {
   grid-row: 3;
