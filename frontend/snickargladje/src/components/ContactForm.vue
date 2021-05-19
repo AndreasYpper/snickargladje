@@ -87,7 +87,7 @@ export default {};
   font-family: "Lato", sans-serif;
   font-size: 4vw;
   grid-column: 2 / 12;
-  background-color: #a7b3a5;
+  background-color: #b4dbc0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -95,7 +95,7 @@ export default {};
   padding: 8px;
 }
 .send-button:hover {
-  background-color: #b4dbc0;
+  background-color: #a7b3a5;
 }
 .send-button:active {
   transform: translateY(2px);
@@ -163,13 +163,13 @@ export default {};
     font-family: "Lato", sans-serif;
     font-size: 1.3vw;
     grid-column: 4 / 10;
-    background-color: #a7b3a5;
+    background-color: #b4dbc0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   .send-button:hover {
-    background-color: #b4dbc0;
+    background-color: #a7b3a5;
   }
   .send-button:active {
     transform: translateY(2px);

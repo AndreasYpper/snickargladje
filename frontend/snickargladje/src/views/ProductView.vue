@@ -34,7 +34,7 @@ export default {
     grid-template-rows: auto;
   }
   .product-item {
-    grid-column: 3 / 11;
+    grid-column: 1 / 13;
     grid-row: 1;
   }
 }

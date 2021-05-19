@@ -9,7 +9,14 @@
         src="https://dl.dropboxusercontent.com/s/g4y93kq2h6qbs4n/test.svg?dl=0"
       />
     </div>
+    <div class="specefications">
+      <h2>Specfikation</h2>
+      <p><b>Material:</b> Furu</p>
+      <p><b>Tjocklek:</b> 10mm</p>
+      <p><b>Osv:</b> Osv</p>
+    </div>
     <div class="description">
+      <h2>Produkt beskrivning</h2>
       <p>
         Produkt beskrivning ..... "Lorem ipsum dolor sit amet, consectetur
         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -90,23 +97,36 @@ export default {};
     grid-template-rows: auto auto;
   }
   .header {
-    grid-column: 3 / 11;
+    grid-column: 2 / 11;
     grid-row: 1;
     text-align: left;
     font-size: 1.3vw;
   }
   .image-container {
-    grid-column: 3 / 11;
+    grid-column: 2 / 7;
     grid-row: 2;
+    border: #eae3ea solid 1px;
   }
   .image {
-    width: 50vw;
+    width: 40vw;
+  }
+  .specefications {
+    grid-column: 8 / 11;
+    grid-row: 2;
+    text-align: left;
+  }
+  .specefications h2 {
+    border-bottom: #eae3ea solid 2px;
+  }
+  .specefications p {
+    border-bottom: #eae3ea solid 1px;
+    font-size: 0.8vw;
   }
   .description {
-    grid-column: 3 / 11;
+    grid-column: 2 / 7;
     grid-row: 3;
     text-align: left;
-    font-size: 1.2vw;
+    font-size: 1vw;
   }
   .button-group {
     grid-column: 3 / 11;

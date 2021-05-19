@@ -1,5 +1,21 @@
 <template>
   <div class="contact-container">
+    <div class="contact-info">
+      <div class="header">
+        <h1>Kontakt</h1>
+      </div>
+      <div class="info">
+        <p>
+          Innan ni kontaktar oss se gärna nedan på vanliga frågor om din fråga
+          besvaras där, annars kan du kontakta oss genom formuläret nedan, på
+          telefon eller på e-post.
+        </p>
+      </div>
+      <div class="card">
+        <ContactCard />
+      </div>
+    </div>
+
     <div class="contact-form">
       <ContactForm />
     </div>
@@ -12,11 +28,13 @@
 </template>
 
 <script>
+import ContactCard from "@/components/ContactCard";
 import ContactForm from "@/components/ContactForm";
 import Questions from "@/components/Questions";
 import { reactive } from "vue";
 export default {
   components: {
+    ContactCard,
     ContactForm,
     Questions,
   },
@@ -65,13 +83,31 @@ export default {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
   }
-  .contact-form {
-    grid-column: 2 / 5;
+  .contact-info {
+    grid-column: 2 / 12;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .header {
+    grid-column: 1 / 13;
+    text-align: left;
+    border-bottom: solid #eae3ea 1px;
+  }
+  .info {
+    grid-column: 2 / 6;
+    text-align: left;
+  }
+  .card {
+    grid-column: 6 / 12;
+  }
+  .contact-form {
+    grid-column: 3 / 6;
+    grid-row: 2;
   }
   .questions {
-    grid-column: 6 / 12;
-    grid-row: 1;
+    grid-column: 6 / 11;
+    grid-row: 2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: min-content min-content;
