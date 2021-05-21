@@ -21,12 +21,28 @@ export default {};
   grid-template-rows: auto;
 }
 .card {
-  grid-column: 3 / 13;
+  grid-column: 1 / 13;
   text-align: left;
 }
 .card p {
-  font-size: 1vw;
+  font-size: 2.5vw;
   padding: 10px;
   border-bottom: solid #eae3ea 1px;
+}
+@media (min-width: 600px) {
+  .contact-card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+  .card {
+    grid-column: 3 / 13;
+    text-align: left;
+  }
+  .card p {
+    font-size: 1vw;
+    padding: 10px;
+    border-bottom: solid #eae3ea 1px;
+  }
 }
 </style>

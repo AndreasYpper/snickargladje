@@ -60,12 +60,25 @@ export default {};
   text-align: left;
   font-size: 3vw;
 }
-.button-group {
+.specefications {
   grid-column: 2 / 12;
   grid-row: 4;
+  text-align: left;
+}
+.button-group {
+  grid-column: 2 / 12;
+  grid-row: 5;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
+}
+.specefications h2 {
+  font-size: 3vw;
+  border-bottom: #eae3ea solid 2px;
+}
+.specefications p {
+  border-bottom: #eae3ea solid 1px;
+  font-size: 2vw;
 }
 .back-link {
   grid-column: 9 / 13;
@@ -116,6 +129,7 @@ export default {};
     text-align: left;
   }
   .specefications h2 {
+    font-size: 1.5vw;
     border-bottom: #eae3ea solid 2px;
   }
   .specefications p {

@@ -68,13 +68,36 @@ export default {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
 }
-.contact-form {
+.contact-info {
+  grid-row: 1;
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+.header {
+  grid-column: 1 / 13;
+  grid-row: 1;
+  font-size: 3.5vw;
+  border-bottom: solid #eae3ea 1px;
+}
+.info {
   grid-column: 2 / 12;
   grid-row: 2;
+  font-size: 3vw;
+  text-align: left;
+}
+.card {
+  grid-column: 2 / 12;
+  grid-row: 3;
+}
+.contact-form {
+  grid-column: 2 / 12;
+  grid-row: 3;
 }
 .questions {
   grid-column: 2 / 12;
-  grid-row: 1;
+  grid-row: 2;
 }
 @media (min-width: 600px) {
   .contact-container {
@@ -91,23 +114,28 @@ export default {
   }
   .header {
     grid-column: 1 / 13;
+    grid-row: 1;
     text-align: left;
     border-bottom: solid #eae3ea 1px;
+    font-size: 1vw;
   }
   .info {
     grid-column: 2 / 6;
+    grid-row: 2;
     text-align: left;
+    font-size: 1vw;
   }
   .card {
     grid-column: 6 / 12;
+    grid-row: 2;
   }
   .contact-form {
     grid-column: 3 / 6;
-    grid-row: 2;
+    grid-row: 3;
   }
   .questions {
     grid-column: 6 / 11;
-    grid-row: 2;
+    grid-row: 3;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: min-content min-content;
